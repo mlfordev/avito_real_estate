@@ -1,0 +1,11 @@
+/app/runtime/*
+/vendor
+/app/config/local_settings.php
+
+.idea
+.DS_Store
+
+composer.phar
+composer.lock
+
+!.gitkeep

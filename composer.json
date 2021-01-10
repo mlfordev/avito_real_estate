@@ -1,0 +1,66 @@
+{
+  "name": "mlfordev/avito_real_estate",
+  "description": "test task in the avito real estate unit",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Modules\\": "app/Modules",
+      "Phact\\Application\\": "app/components/Application",
+      "Phact\\Main\\": "app/components/Main",
+      "Phact\\Exceptions\\": "app/components/Exceptions",
+      "Phact\\Helpers\\": "app/components/Helpers",
+      "Phact\\Orm\\": "app/components/Orm",
+      "Phact\\Request\\": "app/components/Request",
+      "Phact\\Controller\\": "app/components/Controller",
+      "Phact\\Router\\": "app/components/Router",
+      "Phact\\Event\\": "app/components/Event",
+      "Phact\\Template\\": "app/components/Template",
+      "Phact\\Form\\": "app/components/Form",
+      "Phact\\Validators\\": "app/components/Validators",
+      "Phact\\Module\\": "app/components/Module",
+      "Phact\\Interfaces\\": "app/components/Interfaces",
+      "Phact\\Pagination\\": "app/components/Pagination",
+      "Phact\\Commands\\": "app/components/Commands",
+      "Phact\\Components\\": "app/components/Components",
+      "Phact\\Storage\\": "app/components/Storage",
+      "Phact\\Cache\\": "app/components/Cache",
+      "Phact\\Log\\": "app/components/Log",
+      "Phact\\Translate\\": "app/components/Translate",
+      "Phact\\Di\\": "app/components/Di"
+    },
+    "files": [
+      "app/components/Helpers/dump.php"
+    ]
+  },
+  "require": {
+    "php": "7.3.*",
+    "monolog/monolog": "~1.23",
+    "ext-json": "*",
+    "imagine/imagine": "^1.2.3",
+    "fenom/fenom": ">=2.11.1",
+    "cocur/slugify": "^2.3",
+    "symfony/translation": "~4.1",
+    "symfony/config": "~4.1",
+    "doctrine/dbal": "~2.8.0",
+    "psr/container": "^1.0",
+    "psr/log": "^1.0.2",
+    "psr/simple-cache": "^1.0.1",
+    "filp/whoops": "^2.2"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "php -r \"copy('app/config/_local_settings.php', 'app/config/local_settings.php');\""
+    ]
+  },
+  "authors": [
+    {
+      "name": "mihail",
+      "email": "mihail@site.localhost",
+      "role": "developer"
+    }
+  ]
+}
